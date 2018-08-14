@@ -5,9 +5,8 @@
         
 <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         
-<title>Blank App</title>
+<title>ezStart</title>
     
-<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 </head>
     
 <body>
@@ -15,9 +14,10 @@
     
 
 <p>
-<!-- Make sure you include the 'amp-iframe' extension JavaScript in the <head> -->
-<amp-iframe src="https://services.cognitoforms.com/f/3-jTkvT4CUm0cOmgpXgdAQ?id=1" layout="responsive" resizable frameborder="0" scrolling="yes" height="417" width="800" sandbox="allow-scripts allow-same-origin"><div overflow></div><div placeholder></div></amp-iframe>
-<p><a href="index.html">Reset form</a>
+<div class="cognito">
+<script src="https://services.cognitoforms.com/s/3-jTkvT4CUm0cOmgpXgdAQ"></script>
+<script>Cognito.load("forms", { id: "1" });</script>
+</div><p><a href="index.html">Reset form</a>
 </body>
 
 
